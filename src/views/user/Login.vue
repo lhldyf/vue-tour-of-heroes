@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a-button>Login</a-button>
+    <a-button @click="login">Login</a-button>
   </div>
 </template>
 
@@ -8,6 +8,13 @@
 export default {
   mounted () {
     console.log('Login mounted.')
+  },
+  methods: {
+    login () {
+      this.$http('/portal/frurl').then(res => {
+        console.log(res)
+      })
+    }
   }
 }
 </script>
