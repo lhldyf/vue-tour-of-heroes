@@ -1,4 +1,4 @@
-# vue-tour-of-heros
+# vue-tour-of-heroes
 
 ## Project setup
 ```
